@@ -4,8 +4,8 @@ const ModuleFederationPlugin =
 const path = require("path");
 const dependencies = require("./package.json").dependencies;
 
-const todoformAppUrl = "http://localhost:3001";
-const todolistppUrl = "http://localhost:3002";
+const todoformAppUrl = "https://todo-mfe-todoform.vercel.app";
+const todolistppUrl = "https://todo-mfe-todolist.vercel.app";
 
 module.exports = {
   entry: "./src/bootstrap.js",
