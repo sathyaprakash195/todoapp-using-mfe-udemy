@@ -43,13 +43,15 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./public/index.html"),
-      favicon: "./public/favicon.ico",
     }),
     new ModuleFederationPlugin({
       name: "todoform_app",
       filename: "remoteEntry.js",
       exposes: {
         "./TodoForm": "./src/components/todo-form.jsx",
+      },
+      shared: {
+        ...dependencies,
       },
     }),
   ],
