@@ -51,9 +51,6 @@ module.exports = {
       exposes: {
         "./TodoForm": "./src/components/todo-form.jsx",
       },
-      shared: {
-        ...dependencies,
-      },
     }),
   ],
 };
